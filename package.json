@@ -1,0 +1,47 @@
+{
+  "name": "seed-crowdsale",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SEED & ZERA crowdsale",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "testrpc": "bash ./run.testrpc.sh",
+    "lint": "npm run lint:eslint && npm run lint:solium",
+    "lint:eslint": "eslint ./test --fix ",
+    "lint:solium": "solium -f ./contracts/*.sol --fix "
+  },
+  "keywords": [],
+  "author": "4000D",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "ethereumjs-util": "^5.1.2",
+    "ethjs-abi": "^0.2.1",
+    "openzeppelin-solidity": "^1.9.0",
+    "solium": "^1.1.7"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "lodash": "^4.17.5",
+    "moment": "^2.20.1",
+    "sprintf-js": "^1.1.1",
+    "truffle-contract": "^3.0.1",
+    "truffle-hdwallet-provider": "https://github.com/cemozerr/truffle-hdwallet-provider/tarball/master",
+    "web3": "^0.20.6"
+  }
+}
